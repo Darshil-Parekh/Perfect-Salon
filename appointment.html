@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment | Perfect Salon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+   
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Book Appointment</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email ID</label>
+            <input type="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select Service</label>
+            <select required>
+                <option value="">Choose Service</option>
+                <option>Haircut</option>
+                <option>Bridal Makeup</option>
+                <option>Hair Spa</option>
+                <option>Facial</option>
+                <option>Body Spa</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Choose Date</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Time</label>
+            <div class="time-row">
+                <input type="text" placeholder="Enter time (e.g. 10:30)" required>
+                <select required>
+                    <option value="">AM/PM</option>
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Book Now</button>
+
+    </form>
+</div>
+ <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#5c3d3d;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:40px 15px;
+        }
+
+        .form-container{
+            background:rgba(255,255,255,0.05);
+            backdrop-filter:blur(15px);
+            padding:40px;
+            border-radius:20px;
+            width:100%;
+            max-width:450px;
+            box-shadow:0 0 30px rgba(0,0,0,0.4);
+            color:white;
+        }
+
+        .form-container h2{
+            text-align:center;
+            margin-bottom:30px;
+            font-weight:700;
+        }
+
+        .form-group{
+            margin-bottom:18px;
+        }
+
+        .form-group label{
+            display:block;
+            margin-bottom:6px;
+            font-weight:500;
+        }
+
+        .form-group input,
+        .form-group select{
+            width:100%;
+            padding:10px 12px;
+            border-radius:8px;
+            border:2px solid rgba(255,255,255,0.2);
+            outline:none;
+            background:rgba(255,255,255,0.08);
+            color:white;
+            transition:0.3s ease;
+        }
+
+        .form-group input::placeholder{
+            color:rgba(255,255,255,0.7);
+        }
+
+        .form-group select{
+            background-color:#4a2f2f;
+            color:white;
+        }
+
+        .form-group select option{
+            background:#4a2f2f;
+            color:white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus{
+            border:2px solid #ff4fa3;
+            box-shadow:0 0 15px #ff4fa3;
+            background:rgba(255,255,255,0.15);
+        }
+
+        /* Time row layout */
+        .time-row{
+            display:flex;
+            gap:10px;
+        }
+
+        .time-row input{
+            flex:2;
+        }
+
+        .time-row select{
+            flex:1;
+        }
+        .submit-btn{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:30px;
+            background:#ff4fa3;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.4s;
+            box-shadow:0 0 20px #ff4fa3;
+        }
+
+        .submit-btn:hover{
+            transform:scale(1.05);
+            box-shadow:0 0 30px #ff4fa3;
+        }
+        @media(max-width:480px){
+            .form-container{
+                padding:30px 20px;
+            }
+
+            .time-row{
+                flex-direction:column;
+            }
+        }
+
+    </style>
+</body>
+</html>
