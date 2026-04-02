@@ -7,7 +7,7 @@ This project showcases a stylish landing page for a beauty salon including servi
 
 # 🌐 Live Preview
 
-You can host this project using **GitHub Pages**, **Netlify**, or **Vercel**.
+https://darshil-parekh.github.io/Perfect-Salon/
 
 ---
 
